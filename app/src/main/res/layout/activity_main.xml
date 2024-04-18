@@ -6,26 +6,64 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!--  Note -: An unique id must be provided to each ui elements.  -->
+    <ImageView
+        android:id="@+id/userImg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="36dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/userImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.134" />
+
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/userTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:text="Kate Json"
+        android:textColor="#878383"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/textInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:background="#CFC6C6"
-        android:gravity="center"
-        android:padding="20sp"
-        android:text="Hello World!"
-        android:textAllCaps="true"
-        android:textColor="#1A77CA"
+        android:layout_margin="30dp"
+        android:hint="Your Name"
+        android:padding="24dp"
+        android:text="Enter Your Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="390dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/myBtn"
+        android:layout_width="184dp"
+        android:layout_height="91dp"
+        android:layout_margin="70dp"
+        android:clickable="true"
+        android:enabled="true"
+        android:focusable="true"
+        android:text="Click Me"
+        android:textColor="#EFEFEF"
         android:textSize="22sp"
         android:textStyle="bold"
-        android:typeface="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textInput" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
